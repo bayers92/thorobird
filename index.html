@@ -33,13 +33,34 @@
             <h1> Social Impact Real Estate Development </h1>
           </div>
           <div class = "small-12 small-centered columns text-center arrow">
-            <a href="#about"><i class="fa fa-angle-double-down fa-4x"></i></a>
+            <a href="#start"><i class="fa fa-angle-double-down fa-4x"></i></a>
           </div>
         </div>
       </div>
       <!-- END hero row -->
 
+
+      <div class = "row show-for-medium-up">
+        <div class = "small-12 columns">
+          <div data-magellan-expedition="fixed">
+            <dl class="sub-nav">
+              <dd data-magellan-arrival="about"><a href="#about">About</a></dd>
+              <dd data-magellan-arrival="development"><a href="#development">Development</a></dd>
+              <dd data-magellan-arrival="consulting"><a href="#consulting">Consulting</a></dd>
+              <dd data-magellan-arrival="investing"><a href="#investing">Investing</a></dd>
+              <dd data-magellan-arrival="team"><a href="#team">Our Team</a></dd>
+              <dd data-magellan-arrival="contact"><a href="#contact">Contact</a></dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <!-- END Desktop Navigation row -->
+
+
+
+      <a name="start"></a>
       <div class = "row subtitle">
+        <a name="about" data-magellan-destination="about"></a>
         <div class = "small-12 columns title">
           <h1> Thorobird Real Estate </h1>
         </div>
@@ -89,6 +110,7 @@
       </div>
       <!-- END subtitle row -->
 
+      <a name="development" data-magellan-destination="development"></a>
       <div class = "row section">
         <div class = "small-12 columns">
           <h2> Real Estate Development </h2>
@@ -161,7 +183,7 @@
       </div>
       <!-- END development row -->
 
-
+      <a name="consulting" data-magellan-destination="consulting"></a>
       <div class ="row section">
         <div class = "small-12 columns">
           <h2> Consulting </h2>
@@ -180,6 +202,7 @@
       <!-- END consulting row -->
 
 
+      <a name="investing" data-magellan-destination="investing"></a>
       <div class ="row section">
         <div class = "small-12 columns">
           <h2> Thorobird Community Investors (TCI) </h2>
@@ -195,11 +218,12 @@
       <!-- END investing row -->
       
 
+      <a name="team" data-magellan-destination="team"></a>
       <div class = "row section">
         <div class = "small-12 columns">
-          <h2> Our Team </h2>
+          <h2> Our Team </h2><p><em> Click name for full bio </em></p>
         </div>
-        <div class = "row members">
+        <div class = "members">
           <div class ="small-10 medium-4 columns member">
             <p>
               <a href="#" data-reveal-id="myModal-Campbell"><span class = "member_name">Thomas Campbell</span></a><br/>
@@ -371,25 +395,70 @@
       </div>
       <!-- END About row -->
 
+
+      <a name="contact" data-magellan-destination="contact"></a>
+      <div class = "row section contact">
+        <div class = "small-12 columns">
+          <h2 class = "text-left"> Contact Us </h2>
+          <h4>THOROBIRD COMPANIES</h4>
+          <h5>1350 AVENUE OF THE AMERICAS</h5>
+          <h5>FL2 NEW YORK, NY 10019</h5><br/>
+
+          <h5> PHONE: +1 646 710 4909 </h5><br/>
+          <div class ="small-12 medium-10 small-centered columns text-left" id="info">
+            <div class = "panel">
+              <form method="POST" name="contactform" action="contact-form-handler.php">
+                <div class="row">
+                  <div class="small-12 medium-offset-2 medium-4 columns">
+                    <input type="text" name="name" placeholder="Name (required)" />
+                  </div>
+                  <div class="small-12 medium-4 columns end">
+                    <input type="text" name="email" placeholder="Email (required)" />
+                  </div>
+                </div>
+                <div class ="row">
+                  <div class="small-12 medium-offset-2 medium-8 small-centered columns end">
+                    <input type="text" name="subject" placeholder="Subject.." />
+                  </div>
+                </div>
+                <div class = "row">
+                  <div class="small-12 medium-offset-2 medium-8 small-centered columns end">
+                    <textarea name="message"  rows="10" placeholder="Message.."></textarea>
+                  </div>
+                </div>
+                <div class ="row">
+                  <div class ="small-12 small-centered columns text-center">
+                    <input class="button small large-6" type="submit" value = "Send Message" />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
       <div class = "footer">
         <div class = "row">
           <div class = "small-12 columns text-center">
             <p> Copyright © 2015 Thorobird, All Rights Reserved. <br/><br/></p>
           </div>
-         <div clas = "small-12 columns"> 
-          <p>It is the policy of Thorobird Companies LLC not to discriminate against any employee or any applicant for employment because of age, race, religion, color, handicap, sex, physical condition, developmental disability, sexual orientation or national origin.  This policy shall include, but not be limited to, the following:  recruitment and employment, promotion, demotion, transfer, compensation, selection for training including apprenticeship, layoff and termination.  This company further agrees to take affirmative action to ensure equal employment opportunities.</p>
+          <div clas = "small-12 columns"> 
+            <p>It is the policy of Thorobird Companies LLC not to discriminate against any employee or any applicant for employment because of age, race, religion, color, handicap, sex, physical condition, developmental disability, sexual orientation or national origin.  This policy shall include, but not be limited to, the following:  recruitment and employment, promotion, demotion, transfer, compensation, selection for training including apprenticeship, layoff and termination.  This company further agrees to take affirmative action to ensure equal employment opportunities.</p>
+          </div>
         </div>
       </div>
+      <!-- END footer row -->
+
     </div>
-
-
+    <!-- END Container  row-->
   </div>
-  <!-- END Container  row-->
-</div>
-<!-- END wrapper row -->
+  <!-- END wrapper row -->
 
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="bower_components/foundation/js/foundation.min.js"></script>
-<script src="js/app.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/foundation/js/foundation.min.js"></script>
+  <script src="js/foundation/foundation.magellan.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
