@@ -95,30 +95,30 @@ $include-html-global-classes: $include-html-classes;
 
 // We use these to define default font weights
 // $font-weight-normal: normal;
-// $font-weight-bold: bold;
+// $font-weight-bold: bolder;
 
-// $white       : #FFFFFF;
-// $ghost       : #FAFAFA;
-// $snow        : #F9F9F9;
-// $vapor       : #F6F6F6;
-// $white-smoke : #F5F5F5;
-// $silver      : #EFEFEF;
-// $smoke       : #EEEEEE;
-// $gainsboro   : #DDDDDD;
-// $iron        : #CCCCCC;
-// $base        : #AAAAAA;
-// $aluminum    : #999999;
-// $jumbo       : #888888;
-// $monsoon     : #777777;
-// $steel       : #666666;
-// $charcoal    : #555555;
-// $tuatara     : #444444;
-// $oil         : #333333;
-// $jet         : #222222;
-// $black       : #000000;
+$white       : #FFFFFF;
+$ghost       : #FAFAFA;
+$snow        : #F9F9F9;
+$vapor       : #F6F6F6;
+$white-smoke : #F5F5F5;
+$silver      : #EFEFEF;
+$smoke       : #EEEEEE;
+$gainsboro   : #DDDDDD;
+$iron        : #CCCCCC;
+$base        : #AAAAAA;
+$aluminum    : #999999;
+$jumbo       : #888888;
+$monsoon     : #777777;
+$steel       : #666666;
+$charcoal    : #555555;
+$tuatara     : #444444;
+$oil         : #333333;
+$jet         : #222222;
+$black       : #000000;
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
+$primary-color: #c09d6f;
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
@@ -127,8 +127,8 @@ $include-html-global-classes: $include-html-classes;
 
 // We use these to control various global styles
 // $body-bg: $white;
-// $body-font-color: $jet;
-// $body-font-family: $font-family-sans-serif;
+$body-font-color: #949392 !important;
+$body-font-family: 'Source Sans Pro', sans-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
 
@@ -234,10 +234,12 @@ $include-html-global-classes: $include-html-classes;
 // $small-font-size: 60%;
 // $small-font-color: scale-color($header-font-color, $lightness: 35%);
 
+$larger-font-size: 140%;
+
 // We use these to style paragraphs
 // $paragraph-font-family: inherit;
 // $paragraph-font-weight: $font-weight-normal;
-// $paragraph-font-size: 1rem;
+// $paragraph-font-size: 1.4rem;
 // $paragraph-line-height: 1.6;
 // $paragraph-margin-bottom: rem-calc(20);
 // $paragraph-aside-font-size: rem-calc(14);
@@ -1465,3 +1467,137 @@ $include-html-global-classes: $include-html-classes;
 // $include-accessibility-classes: true;
 // $include-table-visibility-classes: true;
 // $include-legacy-visibility-classes: true;
+
+body, html {
+	width: 100%;
+	height: 100%;
+}
+
+.larger-font {
+	font-size: $larger-font-size !important;
+}
+
+#wrapper {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+	overflow-x: hidden;
+}
+
+.container {
+	height: 100%;
+}
+
+
+// -- Homepage --
+
+.row.hero {
+	min-width: 100% !important;
+	min-height: 100% !important;
+	background-image: url('../img/NYC0_dark.jpg');
+	background-size: cover;
+	background-position: top center;
+	max-width: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+	vertical-align: middle;
+	z-index: -1;
+	.logo {
+		position:fixed;
+		top: 0px;
+	}
+	.content {
+		position: fixed;
+		width:100%;
+		height: 30%;
+		top: 35%;
+		left: 0;
+		display: table;
+		h1 {
+			display: table-cell;
+			vertical-align: middle;
+			color: white;
+			text-transform: uppercase;
+			line-height: 1.5 em;
+		}
+	}
+	.arrow {
+		position: fixed;
+		top: 70%;
+		text-align: center;
+		left: 0;
+		a {
+			color: white;
+			&:hover {
+				color: $primary-color;
+			}
+		}
+	}
+}
+
+// -- Post Homepage --
+
+.subtitle{
+	padding-top: 100px;
+	.info {
+		padding-bottom: 70px;
+		padding-top: 70px;
+	}
+
+	h1 {
+		font-size: 3em;
+	}
+	h2 {
+		color: $primary-color;
+	}
+	.title {
+		// padding-bottom: 60px;
+	}
+	p {
+		color: #949392;
+	}
+}
+
+
+.section {
+	margin-top: 125px !important;
+	margin-bottom: 125px !important;
+	h2 {
+		color:#949392;
+		font-weight: bolder;
+		padding-bottom: 35px;
+		margin-bottom: 35px;
+		border-bottom: 1px solid #949392;
+	}
+	h3 {
+		color: $primary-color;
+	}
+	.area {
+		padding-top: 35px;
+		height: 240px !important;
+	}
+}
+
+.members {
+	.member {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+
+.member_name {
+	font-size: $larger-font-size;
+	color: $primary-color;
+}
+
+
+.footer {
+	width: 100%;
+	bottom: 0;
+	background-color: $steel;
+	p {
+		margin-bottom: 0px;
+	}
+}
+

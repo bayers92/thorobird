@@ -1,171 +1,395 @@
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation</title>
-    <link rel="stylesheet" href="stylesheets/app.css" />
-    <script src="bower_components/modernizr/modernizr.js"></script>
-  </head>
-  <body>
-    <div class="row">
-      <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="panel">
-          <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-          <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-          <p>Once you've exhausted the fun in this document, you should check out:</p>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
-            </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thorobird Real Estate</title>
+  <link rel="stylesheet" href="stylesheets/app.css" />
+  <script src="bower_components/modernizr/modernizr.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="js/fitvids.js"></script>
+
+  <script>
+  $(document).ready(function(){
+    // Target your .container, .wrapper, .post, etc.
+    $("#thing-with-videos").fitVids();
+  });
+  </script>
+
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+</head>
+<body>
+  <div id = "wrapper">
+    <div class = "container">
+
+      <div class = "row hero">
+        <div class = "row">
+          <div class = "small-12 columns text-center logo">
+            <img src = "img/Thorobird_Logo_hero2.png" alt="Thorobird Logo"></img>
           </div>
-          <div class="row">
-            <div class="large-4 medium-4 medium-push-2 columns">
-              <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-            </div>
-            <div class="large-4 medium-4 medium-pull-2 columns">
-              <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-            </div>        
+          <div class = "small-12 small-centered columns text-center content">
+            <h1> Social Impact Real Estate Development </h1>
+          </div>
+          <div class = "small-12 small-centered columns text-center arrow">
+            <a href="#about"><i class="fa fa-angle-double-down fa-4x"></i></a>
           </div>
         </div>
       </div>
-    </div>
+      <!-- END hero row -->
 
-    <div class="row">
-      <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
+      <div class = "row subtitle">
+        <div class = "small-12 columns title">
+          <h1> Thorobird Real Estate </h1>
+        </div>
+        <div class = "small-12 columns info">
+          <p class = "larger-font"> Thorobird exists to create sustainable development solutions and housing options for deserving communities and individuals and profitable and socially responsible investment alternatives for our partners. Our three lines of business are development, consulting and agency. Thorobird invests in 11 tri-state urban in-fill areas representing.  We focus on investments which allow for the realization of optimal social, environmental and investment returns. </p>
+        </div>
 
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="callout panel">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
+        <div class = "small-12 medium-4 columns">
+          <div class = "small-12 small-centered columns text-center">
+            <h2><i class="fa fa-building-o fa-2x"></i></h2>
+          </div>
+          <div class = "small-12 small-centered columns text-center">
+            <h2> Development </h2>
+          </div>
+          <div class = "small-12 small-centered columns text-center">
+            <p> We capitalize and manage activities that improve our target communities. </p>
+          </div>
+        </div>
+        <div class = "small-12 medium-4 columns">
+          <div class = "small-12 small-centered columns text-center">
+            <h2><i class="fa fa-bullhorn fa-2x"></i></h2>
+          </div>
+          <div class = "small-12 small-centered columns text-center">
+            <h2> Consulting </h2>
+          </div>
+          <div class = "small-12 small-centered columns text-center">
+            <p> We provide professional advice on real estate investment and development. </p>
+          </div>
+        </div>
+        <div class = "small-12 medium-4 columns">
+          <div class = "small-12 small-centered columns text-center">
+            <h2><i class="fa fa-line-chart fa-2x"></i></h2>
+          </div>
+          <div class = "small-12 small-centered columns text-center">
+            <h2> Investing </h2>
+          </div>
+          <div class = "small-12 small-centered columns text-center">
+            <p> We fund sustainable places to live work and play. </p>
+          </div>
+        </div>
+
+        <div class ="small-12 columns info">
+          <p class = "larger-font">
+            Thorobird is founded on the principles of good will, thorough analysis and wise execution. The team at Thorobird, takes pride in thorough feasibility analysis and due diligence in analyzing every opportunity. Beyond the numbers, we work to exercise wisdom in all investment decisions. A societal symbol for wisdom is the owl. Thus spawn the company name “Thorobird”. We make it our business to be thorough and as wise as an owl.
+          </p>
+        </div>
+      </div>
+      <!-- END subtitle row -->
+
+      <div class = "row section">
+        <div class = "small-12 columns">
+          <h2> Real Estate Development </h2>
+        </div>
+        <div class = "small-12 columns">
+          <p class = "larger-font">Over 1,400 and approximately $500 million affordable housing developed by firm principals. Our broad portfolio of affordable and mixed-income developments demonstrates our continuing ability to create affordable housing opportunities in a diversity of neighborhoods and communities.</p>
+        </div>
+
+        <div class = "row" data-equalizer>
+          <div class = "small-12 medium-3 columns area" data-equalizer-watch>
+            <div class = "small-12 small-centered columns">
+              <h3> Cost Efficiency </h3>
+            </div>
+            <div class = "small-12 small-centered columns">
+              <p> Addressing the areas of initial construction cost, building life span, end-user productivity and operating and maintenance costs. </p>
+            </div>
+          </div>
+
+          <div class = "small-12 medium-3 columns area" data-equalizer-watch>
+            <div class = "small-12 small-centered columns">
+              <h3> Unique Design  </h3>
+            </div>
+            <div class = "small-12 small-centered columns">
+              <p> Quality design solutions which yield projects of distinct personality. </p>
+            </div>
+          </div>
+
+          <div class = "small-12 medium-3 columns area" data-equalizer-watch>
+            <div class = "small-12 small-centered columns">
+              <h3> Green Building </h3>
+            </div>
+            <div class = "small-12 small-centered columns">
+              <p> A holistic life cycle approach to green building, aggressively pursuing green strategies in every stage of the project. </p>
+            </div>
+          </div>
+
+          <div class = "small-12 medium-3 columns area" data-equalizer-watch>
+            <div class = "small-12 small-centered columns">
+              <h3> Preservation </h3>
+            </div>
+            <div class = "small-12 small-centered columns">
+              <p> The rehabilitation the built environment is the most responsible form of real estate development. </p>
+            </div>
+          </div>
+
+          <div class = "small-12 medium-3 columns area end" data-equalizer-watch>
+            <div class = "small-12 small-centered columns">
+              <h3> Difficult Sites </h3>
+            </div>
+            <div class = "small-12 small-centered columns">
+              <p> An urban infill developer, Thorobird is committed to resolving challenges of difficult development sites. </p>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-        </div>
-        
-        <hr />
-                
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-12.columns" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <div class="row collapse">
-                <label>Input Label</label>
-                <div class="small-9 columns">
-                  <input type="text" placeholder="small-9.columns" />
-                </div>
-                <div class="small-3 columns">
-                  <span class="postfix">.com</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Select Box</label>
-              <select>
-                <option value="husker">Husker</option>
-                <option value="starbuck">Starbuck</option>
-                <option value="hotdog">Hot Dog</option>
-                <option value="apollo">Apollo</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-6 medium-6 columns">
-              <label>Choose Your Favorite</label>
-              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-            </div>
-            <div class="large-6 medium-6 columns">
-              <label>Check these out</label>
-              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Textarea Label</label>
-              <textarea placeholder="small-12.columns"></textarea>
-            </div>
-          </div>
-        </form>
-      </div>     
 
-      <div class="large-4 medium-4 columns">
-        <h5>Try one of these buttons:</h5>
-        <p><a href="#" class="small button">Simple Button</a><br/>
-        <a href="#" class="small radius button">Radius Button</a><br/>
-        <a href="#" class="small round button">Round Button</a><br/>            
-        <a href="#" class="medium success button">Success Btn</a><br/>
-        <a href="#" class="medium alert button">Alert Btn</a><br/>
-        <a href="#" class="medium secondary button">Secondary Btn</a></p>           
-        <div class="panel">
-          <h5>So many components, girl!</h5>
-          <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-          <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>          
+        <div class = "row">
+          <div class = "small-10 columns">
+            <p class = "larger-font">Example project: <strong>The Cove</strong></p>
+          </div>
+          <div class = "small-12 columns">
+            <p> The Cove Is one of the first ground-up development projects to include both market-rate and supportive housing under the same roof. Over 1,400 homes have been developed and converted through a $500 MM investment to date. </p>
+          </div>
+        </div>
+
+        <div class = "row video">
+          <div class="flex-video widescreen vimeo">
+            <iframe src="http://player.vimeo.com/video/124009874" width="100%" height="auto" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+          </div>
+        </div>
+      </div>
+      <!-- END development row -->
+
+
+      <div class ="row section">
+        <div class = "small-12 columns">
+          <h2> Consulting </h2>
+        </div>
+        <div class = "small-12 columns">
+          <p class = "larger-font">Developers work with a diverse network of people to get projects done on time and under budget. These people are also stakeholders with specific interests and risk levels.<br/>
+          </p>
+          <p>
+            As a project finance consultant, Thorobird assists other developers by designing and carrying out developments programs that result in equitable allocations of risk among stakeholders.<br/>
+          </p>
+          <p>
+            We assist clients in the delivery of construction projects on time and under budget. Our success is due to our ability to embrace and minimize the effects of external factors. Specifically, we assist with scheduling, cost analysis, change orders, construction claims and staffing.<br/>
+          </p>
+        </div>
+      </div>
+      <!-- END consulting row -->
+
+
+      <div class ="row section">
+        <div class = "small-12 columns">
+          <h2> Thorobird Community Investors (TCI) </h2>
+        </div>
+        <div class = "small-12 columns">
+          <p class = "larger-font">TCI invests capital through strategic partnerships with local operators of real estate development and business that create economic and social benefit to underserved urban areas, with a focus on Bronx, New York. TCI invests $100K – $10M in high-impact investments.<br/>
+          </p>
+          <p>
+            The TCI is suitable foreign and domestic high-net worth-investors banks and social impact investment funds.<br/>
+          </p>
+        </div>
+      </div>
+      <!-- END investing row -->
+      
+
+      <div class = "row section">
+        <div class = "small-12 columns">
+          <h2> Our Team </h2>
+        </div>
+        <div class = "row members">
+          <div class ="small-10 medium-4 columns member">
+            <p>
+              <a href="#" data-reveal-id="myModal-Campbell"><span class = "member_name">Thomas Campbell</span></a><br/>
+              <em> Managing Member </em>
+            </p>
+
+            <div id="myModal-Campbell" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+              <h2 id="modalTitle">Thomas Campbell</h2>
+              <p class="lead">Managing Member</p>
+              <p>Thomas Campbell is a founder and principal of Thorobird Companies LLC. Thomas serves as on the Albany Budget and the New York City Budget Committees of the New York State Association for Affordable Housing. He works on the Board of Governors of Triskeles, a youth development nonprofit. A graduate of the Colgate University, he holds both a B.A. in Economics and is an active Member of the Colgate Real Estate Club of New York. He also has a MBA in Real Estate Finance and Entrepreneurship from Columbia Business School.</p>
+              <p>
+                <strong>LOCATION </strong><br/>
+                New York City <br/>
+                <br/>
+                <strong>PREVIOUS EMPLOYERS</strong> <br/>
+                JP Morgan <br/>
+                Morgan Stanley <br/>
+                Merrill Lynch <br/>
+                <br/>
+                <strong>EDUCATION </strong><br/>
+                Colgate University, BA <br/>
+                Columbia University, MBA <br/>
+                <br/>
+                <strong>PHONE </strong><br/>
+                646 - 710 - 4909 <br/>
+                <br/>
+                <strong>EMAIL</strong> <br/>
+                tcampbell@thorobird.com <br/>
+              </p>
+              <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+            </div>
+
+          </div>
+
+          <div class ="small-10 medium-4 columns member">
+            <p>
+              <a href="#" data-reveal-id="myModal-Reed"><span class = "member_name">Mark Reed</span></a><br/>
+              <em> Director, Chairman </em>
+            </p>
+
+            <div id="myModal-Reed" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+              <h2 id="modalTitle">Mark Reed</h2>
+              <p class="lead">Director, Chairman</p>
+              <p>Mark is lead investor and has worked with Thorobird since 2009. Mark is founder of Contact Fund, LLC. He is a former Vice President of Portfolio Management at the Bank of New York where he co-managed a $500 million bond portfolio. Since 1997, Mr. Reed has served on the Board of Directors of Simpson Investment Company, a fourth-generation, family-owned business based in Tacoma, Washington. He also currently serves as Chair of the Board of the Rudolf Steiner School in Manhattan.</p>
+              <p>
+                <strong>LOCATION </strong><br/>
+                New York City <br/>
+                <br/>
+                <strong>PREVIOUS EMPLOYERS</strong> <br/>
+                Contact Fund <br/>
+                BNY Mellon <br/>
+                <br/>
+                <strong>EDUCATION </strong><br/>
+                Standford University, BA <br/>
+                New York University, MBA <br/>
+                <br/>
+                <strong>PHONE </strong><br/>
+                646 - 710 - 4909 <br/>
+                <br/>
+                <strong>EMAIL</strong> <br/>
+                mreed@thorobird.com <br/>
+              </p>
+              <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+            </div>
+          </div>
+
+
+          <div class ="small-10 medium-4 columns member">
+            <p>
+              <a href="#" data-reveal-id="myModal-Reed"><span class = "member_name">John Bonhomme</span></a><br/>
+              <em> Director, Investor Relations </em>
+            </p>
+
+            <div id="myModal-Reed" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+              <h2 id="modalTitle">John Bonhomme</h2>
+              <p class="lead">Director, Investor Relations</p>
+              <p>John Bonhomme leverages a successful career investment banking and private-equity sourcing and deploying over $150 million in a variety of industries from banking to aerospace manufacturing.  Mr. Bonhomme formerly worked in leveraged finance at J.P. Morgan and in fixed-income and investment banking at Goldman Sachs & Co., where he managed a client base with assets of $850 billion.</p>
+              <p>
+                <strong>LOCATION </strong><br/>
+                New York City <br/>
+                <br/>
+                <strong>PREVIOUS EMPLOYERS</strong> <br/>
+                JP Morgan<br/>
+                Bonwick Capital Partners <br/>
+                Scroll Capital <br/>
+                Goldman Sachs <br/>
+                <br/>
+                <strong>EDUCATION </strong><br/>
+                Colgate University, BA <br/>
+                Cornell University, MBA <br/>
+                <br/>
+                <strong>PHONE </strong><br/>
+                646 - 710 - 4909 <br/>
+                <br/>
+                <strong>EMAIL</strong> <br/>
+                jbonhomme@thorobird.com <br/>
+              </p>
+              <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+            </div>
+          </div>
+
+
+          <div class ="small-10 medium-4 columns member">
+            <p>
+              <a href="#" data-reveal-id="myModal-Reed"><span class = "member_name">Deborah Widerkehr</span></a><br/>
+              <em> Director, Development Finance </em>
+            </p>
+
+            <div id="myModal-Reed" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+              <h2 id="modalTitle">Deborah Widerkehr</h2>
+              <p class="lead">Director, Development Finance </p>
+              <p>Deborah has 24 years of experience in real estate development and finance. Virtually all projects in her development portfolio have involved the structuring of public/private partnerships.  Accordingly, they all required the creativity and tenacity to create complex financial structures leveraging new markets tax credits, low income housing tax credits and other such financial instruments.</p>
+              <p>
+                <strong>LOCATION </strong><br/>
+                New York City <br/>
+                <br/>
+                <strong>PREVIOUS EMPLOYERS</strong> <br/>
+                CPC Resources, Inc.<br/>
+                Housing and Services, Inc. <br/>
+                NYC HPD <br/>
+                Port Authority NY NJ <br/>
+                <br/>
+                <strong>EDUCATION </strong><br/>
+                Wellesley College, BA <br/>
+                Columbia Business School, MBA <br/>
+                <br/>
+                <strong>PHONE </strong><br/>
+                646 - 710 - 4909 <br/>
+                <br/>
+                <strong>EMAIL</strong> <br/>
+                dwiderkehr@thorobird.com <br/>
+              </p>
+              <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+            </div>
+          </div>
+
+          <div class ="small-10 medium-4 columns end member">
+            <p>
+              <a href="#" data-reveal-id="myModal-Reed"><span class = "member_name">James Valouch</span></a><br/>
+              <em> Director, Construction Management </em>
+            </p>
+
+            <div id="myModal-Reed" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+              <h2 id="modalTitle">James Valouch</h2>
+              <p class="lead">Director, Construction Management </p>
+              <p>James Valouch is a New York construction professional with over ten years of experience as a General Contractor, project manager and building coordinator. He is the president of Black Square Builders and manages a staff of some twenty-five building professionals. James graduated from New York University summa cum laude in 1988 with a dual major in Economics and Real Estate. He received a J.D.</p>
+              <p>
+                <strong>LOCATION </strong><br/>
+                New York City <br/>
+                <br/>
+                <strong>PREVIOUS EMPLOYERS</strong> <br/>
+                Mid-Atlantic Site Corp.<br/>
+                Midlantic Management, Inc. <br/>
+                <br/>
+                <strong>EDUCATION </strong><br/>
+                New York University, BA <br/>
+                New York University, JD <br/>
+                <br/>
+                <strong>PHONE </strong><br/>
+                646 - 710 - 4909 <br/>
+                <br/>
+                <strong>EMAIL</strong> <br/>
+                jim@thorobird.com <br/>
+              </p>
+              <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END About row -->
+
+      <div class = "footer">
+        <div class = "row">
+          <div class = "small-12 columns text-center">
+            <p> Copyright © 2015 Thorobird, All Rights Reserved. <br/><br/></p>
+          </div>
+         <div clas = "small-12 columns"> 
+          <p>It is the policy of Thorobird Companies LLC not to discriminate against any employee or any applicant for employment because of age, race, religion, color, handicap, sex, physical condition, developmental disability, sexual orientation or national origin.  This policy shall include, but not be limited to, the following:  recruitment and employment, promotion, demotion, transfer, compensation, selection for training including apprenticeship, layoff and termination.  This company further agrees to take affirmative action to ensure equal employment opportunities.</p>
         </div>
       </div>
     </div>
 
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+
+  </div>
+  <!-- END Container  row-->
+</div>
+<!-- END wrapper row -->
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/foundation/js/foundation.min.js"></script>
+<script src="js/app.js"></script>
+</body>
 </html>
