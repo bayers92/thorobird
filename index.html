@@ -33,13 +33,13 @@
 
           <aside class="right-off-canvas-menu">
             <ul class="off-canvas-list">
-              <li><label>Thorobird Real Estate</label></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#development">Development</a></li>
-              <li><a href="#consulting">Consulting</a></li>
-              <li><a href="#investing">Investing</a></li>
-              <li><a href="#team">Team</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><label>THOROBIRD REAL ESTATE</label></li>
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#development">DEVELOPMENT</a></li>
+              <li><a href="#consulting">CONSULTING</a></li>
+              <li><a href="#investing">INVESTING</a></li>
+              <li><a href="#team">TEAM</a></li>
+              <li><a href="#contact">CONTACT</a></li>
             </ul>
           </aside>
 
@@ -62,12 +62,12 @@
                 <div class = "small-12 columns">
                   <div data-magellan-expedition="fixed">
                     <dl class="sub-nav">
-                      <dd data-magellan-arrival="about"><a href="#about">About</a></dd>
-                      <dd data-magellan-arrival="development"><a href="#development">Development</a></dd>
-                      <dd data-magellan-arrival="consulting"><a href="#consulting">Consulting</a></dd>
-                      <dd data-magellan-arrival="investing"><a href="#investing">Investing</a></dd>
-                      <dd data-magellan-arrival="team"><a href="#team">Our Team</a></dd>
-                      <dd data-magellan-arrival="contact"><a href="#contact">Contact</a></dd>
+                      <dd data-magellan-arrival="about"><a href="#about">ABOUT</a></dd>
+                      <dd data-magellan-arrival="development"><a href="#development">DEVELOPMENT</a></dd>
+                      <dd data-magellan-arrival="consulting"><a href="#consulting">CONSULTING</a></dd>
+                      <dd data-magellan-arrival="investing"><a href="#investing">INVESTING</a></dd>
+                      <dd data-magellan-arrival="team"><a href="#team">OUR TEAM</a></dd>
+                      <dd data-magellan-arrival="contact"><a href="#contact">SUBMISSIONS</a></dd>
                     </dl>
                   </div>
                 </div>
@@ -420,26 +420,22 @@
               <a name="contact" data-magellan-destination="contact"></a>
               <div class = "row section contact">
                 <div class = "small-12 columns">
-                  <h2 class = "text-left"> Contact Us </h2>
-                  <div class = "small-12 columns map">
-                    <img src = "img/map.jpg" alt = "Thorobird Location"></img>
-                  </div>
-                  <h4>THOROBIRD COMPANIES</h4>
-                  <h5>1350 AVENUE OF THE AMERICAS</h5>
-                  <h5>FL2 NEW YORK, NY 10019</h5><br/>
-                  <h5> PHONE: +1 646 710 4909 </h5>
-                </div>
-              </div>
-              <!-- END CONTACT row -->
-
-
-              <div class = "row section contact">
-                <div class = "small-12 columns">
-                  <h3 class = "text-left"> Submit Potential Development </h3>
+                  <h2 class = "text-left"> Submit Potential Development </h2>
                   <div class ="small-12 medium-10 small-centered columns text-left" id="info">
                     <div class = "panel">
-                      <form method="POST" name="contactform" action="contact-form-handler.php">
+
+                      <?php
+                      if(!empty($errors))
+                      {
+                        echo nl2br($errors);
+                      }
+                      ?>
+
+                      <form method="POST" name="contactform" action="contact-form-handler.php" enctype="multipart/form-data">
                         <div class="row">
+                          <div class = "small-12 columns form-separate">
+                            <p> Your Contact Information </p>
+                          </div>
                           <div class="small-12 medium-4 columns">
                             <input type="text" name="name" placeholder="Name" />
                           </div>
@@ -462,6 +458,9 @@
                           </div>
                         </div>
                         <div class ="row">
+                          <div class = "small-12 columns form-separate">
+                            <p> Property Information </p>
+                          </div>
                           <div class="small-12 medium-4 columns">
                             <input type="text" name="city" placeholder="City" />
                           </div>
@@ -527,11 +526,11 @@
                             <input type="text" name="lot5" placeholder="Lot 5" />
                           </div>
                         </div>
-                        <div class = "row">
+<!--                         <div class = "row">
                           <div class = "small-12 columns">
                             <label> Project description <input type="file" name="file" id="file"/> </label>
                           </div>
-                        </div>
+                        </div> -->
                         <div class = "row">
                           <div class="small-12 small-centered columns end">
                             <textarea name="message"  rows="10" placeholder="Please describe any additional information about the project"></textarea>
@@ -539,47 +538,105 @@
                         </div>
                         <div class ="row">
                           <div class ="small-12 small-centered columns text-center">
-                            <input class="button small large-6" type="submit" value = "Send Message" />
+                            <input class="button small large-6" type="submit" value = "Submit" />
                           </div>
                         </div>
                       </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- END SUBMIT row -->
 
-              <div class = "footer">
-                <div class = "row">
-                  <div class = "small-12 columns text-center">
-                    <p> Copyright © 2015 Thorobird, All Rights Reserved. <br/><br/></p>
-                  </div>
-                  <div clas = "small-12 columns"> 
-                    <p>It is the policy of Thorobird Companies LLC not to discriminate against any employee or any applicant for employment because of age, race, religion, color, handicap, sex, physical condition, developmental disability, sexual orientation or national origin.  This policy shall include, but not be limited to, the following:  recruitment and employment, promotion, demotion, transfer, compensation, selection for training including apprenticeship, layoff and termination.  This company further agrees to take affirmative action to ensure equal employment opportunities.</p>
-                  </div>
-                </div>
-              </div>
-              <!-- END footer row -->
+                      <script language="JavaScript">
+// Code for validating the form
+// Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+// for details
+var frmvalidator  = new Validator("email_form_with_php");
+frmvalidator.addValidation("name","req","Please provide your name"); 
+frmvalidator.addValidation("email","req","Please provide your email"); 
+frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+</script>
 
+</div>
+</div>
+</div>
+</div>
+<!-- END SUBMIT row -->
 
-
-            </section>
-            <!-- END main section -->
-          </article>
-          <a class = "exit-off-canvas"></a>
-        </div>
-        <!-- END inner wrap -->
-      </div>
-      <!-- END off-canvas-wrap -->
-
+<div class = "footer">
+  <div class = "row footer">
+    <div class="icon-bar eight-up">
+      <a href="#about">
+        <label>ABOUT</label>
+      </a>
+      <a href="#development">
+        <label>DEVELOPMENT</label>
+      </a>
+      <a href="#consulting">
+        <label>CONSULTING</label>
+      </a>
+      <a href="#investing">
+        <label>INVESTING</label>
+      </a>
+      <a href="#team">
+        <label>OUR TEAM</label>
+      </a>
+      <a href="#" data-reveal-id="myModal-WMBE">
+        <label>WMBE/EEO</label>
+      </a>
+      <a href="#" data-reveal-id="myModal-contact">
+        <label>CONTACT US</label>
+      </a>
+      <a href="#contact" >
+        <label>SUBMISSIONS</label>
+      </a>
     </div>
-    <!-- END Container  row-->
   </div>
-  <!-- END wrapper row -->
+  <div class = "row">
+    <div class = "small-12 columns text-center">
+      <p> <br/>Copyright © 2015 Thorobird, All Rights Reserved. <br/><br/></p>
+    </div>
+  </div>
 
-  <script src="bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="bower_components/foundation/js/foundation.min.js"></script>
-  <script src="bower_components/foundation/js/foundation/foundation.magellan.js"></script>
-  <script src="js/app.js"></script>
+
+
+  <div id="myModal-contact" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+    <h2 id="modalTitle">Contact Us</h2>
+    <div class = "small-12 columns">
+      <h4>THOROBIRD COMPANIES</h4>
+      <h5>1350 AVENUE OF THE AMERICAS</h5>
+      <h5>FL2 NEW YORK, NY 10019</h5><br/>
+      <h5> PHONE: +1 646 710 4909 </h5>
+    </div>
+    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+  </div>
+
+
+  <div id="myModal-WMBE" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+    <h2 id="modalTitle">WMBE/EEO</h2>
+    <div class = "small-12 columns">
+      <p>It is the policy of Thorobird Companies LLC not to discriminate against any employee or any applicant for employment because of age, race, religion, color, handicap, sex, physical condition, developmental disability, sexual orientation or national origin. This policy shall include, but not be limited to, the following: recruitment and employment, promotion, demotion, transfer, compensation, selection for training including apprenticeship, layoff and termination. This company further agrees to take affirmative action to ensure equal employment opportunities.</p>
+    </div>
+    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+  </div>
+</div>
+<!-- END footer row -->
+
+
+
+</section>
+<!-- END main section -->
+</article>
+<a class = "exit-off-canvas"></a>
+</div>
+<!-- END inner wrap -->
+</div>
+<!-- END off-canvas-wrap -->
+
+</div>
+<!-- END Container  row-->
+</div>
+<!-- END wrapper row -->
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/foundation/js/foundation.min.js"></script>
+<script src="bower_components/foundation/js/foundation/foundation.magellan.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
