@@ -38,8 +38,8 @@ if( empty($errors))
 {
 	$to = $myemail; 
 	$email_subject = "Contact form submission: $name";
-	$email_body = "You have received a new message. \n \n"
-	"Personal Information - \n\n 
+	$email_body = "You have received a new message. \n \n
+	Personal Information - \n\n 
 	Name: $name \n 
 	Professional Title: $title \n 
 	Email: $email \n 

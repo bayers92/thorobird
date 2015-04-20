@@ -12,6 +12,41 @@
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
+  <script type="text/javascript">
+
+        // Wait for the page to load first
+        window.onload = function() {
+
+          //Get a reference to the link on the page
+          // with an id of "mylink"
+          var a = document.getElementById("close-link");
+
+          //Set code to run when the link is clicked
+          // by assigning a function to "onclick"
+          a.onclick = function() {
+
+            // $(document).foundation('magellan', 'reflow');
+            $(document).foundation();
+            // Foundation.libs.magellan.settings.init = false;
+            $(document).foundation('magellan','reflow')
+
+            var err = new Error();
+            err.name = 'My API Input Error';
+            err.message = 'Input must be a number';
+            throw(err);
+
+            //If you don't want the link to actually 
+            // redirect the browser to another page,
+            // "google.com" in our example here, then
+            // return false at the end of this block.
+            // Note that this also prevents event bubbling,
+            // which is probably what we want here, but won't 
+            // always be the case.
+            return false;
+          }
+        }
+    </script>
+
 </head>
 <body>
   <div id = "wrapper">
@@ -541,6 +576,9 @@
                             <input class="button small large-6" type="submit" value = "Submit" />
                           </div>
                         </div>
+                        <div class = "row text-center">
+                          <p> <em> Please send any additional information directly to <a href="mailto:info@thorobird.com">info @ thorobird.com </a> </em> </p>
+                        </div>
                       </form>
 
                       <script language="JavaScript">
@@ -561,7 +599,7 @@ frmvalidator.addValidation("email","email","Please enter a valid email address")
 
 <div class = "footer">
   <div class = "row footer">
-    <div class="icon-bar eight-up">
+<!--     <div class="icon-bar eight-up">
       <a href="#about">
         <label>ABOUT</label>
       </a>
@@ -586,6 +624,21 @@ frmvalidator.addValidation("email","email","Please enter a valid email address")
       <a href="#contact" >
         <label>SUBMISSIONS</label>
       </a>
+    </div> -->
+
+    <div class = "small-12 columns">
+      <div data-magellan-expedition class = "magellan2">
+        <dl class="sub-nav">
+          <dd data-magellan-arrival="about"><a href="#about">ABOUT</a></dd>
+          <dd data-magellan-arrival="development"><a href="#development">DEVELOPMENT</a></dd>
+          <dd data-magellan-arrival="consulting"><a href="#consulting">CONSULTING</a></dd>
+          <dd data-magellan-arrival="investing"><a href="#investing">INVESTING</a></dd>
+          <dd data-magellan-arrival="team"><a href="#team">OUR TEAM</a></dd>
+          <dd data-magellan-arrival="footer"><a data-reveal-id="myModal-WMBE"> WMBE/EEO</a></dd>
+          <dd data-magellan-arrival="footer"><a data-reveal-id="myModal-contact">CONTACT US </a></dd>
+          <dd data-magellan-arrival="contact"><a href="#contact">SUBMISSIONS</a></dd>
+        </dl>
+      </div>
     </div>
   </div>
   <div class = "row">
@@ -604,7 +657,7 @@ frmvalidator.addValidation("email","email","Please enter a valid email address")
       <h5>FL2 NEW YORK, NY 10019</h5><br/>
       <h5> PHONE: +1 646 710 4909 </h5>
     </div>
-    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    <div class ="close-reveal-modal"><a class="close-reveal-modal" aria-label="Close" id="close-link">&#215;</a></div>
   </div>
 
 
@@ -613,7 +666,7 @@ frmvalidator.addValidation("email","email","Please enter a valid email address")
     <div class = "small-12 columns">
       <p>It is the policy of Thorobird Companies LLC not to discriminate against any employee or any applicant for employment because of age, race, religion, color, handicap, sex, physical condition, developmental disability, sexual orientation or national origin. This policy shall include, but not be limited to, the following: recruitment and employment, promotion, demotion, transfer, compensation, selection for training including apprenticeship, layoff and termination. This company further agrees to take affirmative action to ensure equal employment opportunities.</p>
     </div>
-    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    <div class ="close-reveal-modal"><a class="close-reveal-modal" aria-label="Close" id="close-link">&#215;</a></div>
   </div>
 </div>
 <!-- END footer row -->
