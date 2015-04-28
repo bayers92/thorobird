@@ -1632,41 +1632,65 @@ article {
 	}
 }
 
+.row.video {
+	margin-top: -125px !important;
+}
 
 @media #{$small-only} {
-	body, html, #wrapper {
-		width: 100%;
-		height: 100%;
-		overflow-x: hidden;
-	}
-	article {
-		overflow-y: auto;
-		overflow-x: hidden;
-	}
-	article,
-	body,
-	html,
-	.off-canvas-wrap, 
-	.off-canvas-wrap .inner-wrap,
-	.row {
-		height: 100%;
-		width: 100%;
-		overflow:scroll;
-		-webkit-overflow-scrolling: touch;
-	}
-	.header {
-		position: absolute;
-		top: 0;
-		width: 100%;
-		z-index: 99;
-	}
-	.off-canvas-wrap .main-section
-	{
-		overflow:scroll;
-		-webkit-overflow-scrolling: touch;
-	}
+	// body, html, #wrapper {
+	// 	width: 100%;
+	// 	height: 100%;
+	// 	overflow-x: hidden;
+	// }
+	// article {
+	// 	overflow-y: auto;
+	// 	overflow-x: hidden;
+	// }
+	// article,
+	// body,
+	// html,
+	// .off-canvas-wrap, 
+	// .off-canvas-wrap .inner-wrap,
+	// .row {
+	// 	height: 100%;
+	// 	width: 100%;
+	// 	overflow:scroll;
+	// 	-webkit-overflow-scrolling: touch;
+	// }
+	// .header {
+	// 	position: absolute;
+	// 	top: 0;
+	// 	width: 100%;
+	// 	z-index: 99;
+	// }
+	// .off-canvas-wrap .main-section
+	// {
+	// 	overflow:scroll;
+	// 	-webkit-overflow-scrolling: touch;
+	// }
 }
 
 .magellan2 {
 	background: none !important;
+}
+
+
+// OFFCANVAS NAV BAR FIX START
+@media #{$small-only} {
+	body,html{
+	    height:100%;
+	    width:100%;
+		overflow:scroll;
+		-webkit-overflow-scrolling: touch;
+		
+	}
+	.off-canvas-wrap,.inner-wrap{
+	    height:100%;   
+	}
+
+	.off-canvas-wrap .main-section
+	{
+	  height: 100%; overflow:scroll;
+	  -webkit-overflow-scrolling: touch;
+	}
 }
