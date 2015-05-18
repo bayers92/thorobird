@@ -1694,3 +1694,25 @@ article {
 	  -webkit-overflow-scrolling: touch;
 	}
 }
+
+a.social_links {
+	float: right;
+	margin-right: 15px;
+	color: #999999;
+	&:hover {
+		color: $primary-color;
+	}
+}
+
+a.social_links.first {
+	margin-right: 60px;
+}
+
+a.social_links_footer {
+	margin-right: 15px;
+	margin-left: 15px;
+	color: #949392;
+	&:hover {
+		color: $primary-color;
+	}
+}
